@@ -6,6 +6,8 @@ import Home from './Pages/Home/Home.jsx'
 import About from './Pages/About/About.jsx'
 import Contact from './Pages/Contact/Contact.jsx'
 import 'bootstrap/dist/css/bootstrap.min.css';
+import PageNotFound from './Pages/PageNotFound/PageNotFound.jsx'
+import SingleProduct from './Pages/Single Product/SingleProduct.jsx'
 
 
 
@@ -29,7 +31,22 @@ import 'bootstrap/dist/css/bootstrap.min.css';
         {
           path:'contact',
           element:<Contact/>
-        }
+        },
+        
+        {
+          path:'/SingleProduct/:id',
+          element:<SingleProduct/>
+        },
+
+        {
+          path:'*',
+          element:<PageNotFound/>
+        },
+
+        
+
+
+
 
       ]
      
